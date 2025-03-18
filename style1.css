@@ -1,0 +1,157 @@
+ body{
+ 	background-image: url(nb.gif);
+ 	width: 1024px;
+ 	margin: auto;
+ 	background-size: 100%;
+ }
+ .container{
+   /*border: 1px solid blue;*/
+   padding: 5px;
+    color: black;
+ }
+  #logo{
+      font-size: calc(1.375rem + 1.5vw); 
+  font-family: monospace;
+  color: #ff9933;
+  font-weight: bold;
+  float: none;
+ }
+ .d1{
+ 	border: 1px solid blue;
+ 	padding: 5px;
+  color: indigo;
+ }
+ #ul1{
+ 	float: left;
+ 	list-style-type: none; 
+
+ }
+ #ul1 li, #ul2 li{
+	display: inline-block;
+ }
+ #ul1 li a, #ul2 li a{
+ 	text-decoration: none;
+ 	color: orangered;
+ 	border: 1px solid;
+  grid-area: ;
+ 	padding: 10px;
+               
+ }
+  #ul1 li a:hover, #ul2 li a:hover{
+  	background: indianred;
+  	color: white;
+
+  }
+  #center{
+  	background: white;
+  	color: blue;
+
+  }
+ #ul2{
+ 	float: right;
+ 	list-style-type: none;
+ }
+
+ .footer{
+ 	clear: both;
+ 	width: 1024px;
+ 	height: 150px;
+ 	background: purple;
+ }
+ h3{
+ 	margin: auto;
+ 	padding: 5px;
+ }
+ .ftr1{
+ 	width: 320px;
+ 	float: left;
+ }
+.ftr2{
+	padding-left: 20px;
+ 	width: 320px;
+ 	float: left;
+ }
+.ftr3{
+	padding-left: 20px;
+ 	width: 320px;
+ 	float: left;
+ }
+ .ftr3 input, textarea{
+ 	width: 200px;
+ 	margin-bottom: 5px;
+ 	border: 1px solid darkblue;
+ 	padding: 2px;
+
+ }
+ .ftr3 button;{ 
+ 	background: pink;
+  	color: blue;
+ }
+.mc{
+  clear: both;
+  width: 100%;
+  min-height: 500px;
+  max-height: auto;
+  background: pink;
+  margin-bottom: 8px;
+  opacity: 0.5;
+  background-size: 100%;
+
+ }
+ .mchm h1{ 
+ 	font-family: arial;
+ 	font-size: 90px;
+ 	text-align: center;
+ 	padding-top: 50px;
+
+  }
+
+  .newz{
+  	width: 90%;
+  	height: 50px;
+  	margin: 20px;
+
+  }
+
+  #u11{
+    list-style-type: none;
+    pedding right: 20px;
+    font-size: 30px;
+
+  }
+   
+ #ul1 li, #ul2 li{
+    float: left;
+    display: inline-block;
+ }
+  #ul1 li a, #ul2 li a{
+    text-decoration: none;
+    color: cc6633;
+    border: 1px solid;
+    grid-area: ;
+    padding: 10px;
+               
+ }
+#ul1 li a:hover, #ul2 li a:hover{
+    background: cc6633;
+    color: cc6633;
+
+  }
+
+ #zi li a{
+   list-style-type: none;
+   pedding right: 20px; 
+   font-size: 20px;
+   float: center;
+   display:inline-block;
+   text-decoration: none;
+   color: orangered;
+   border: 3px ;
+   grid-area: ;
+   padding: 10px;
+   
+}
+#zi li a:hover{
+   background: indigo;
+   color: mediumvioletred;
+}

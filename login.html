@@ -1,0 +1,158 @@
+<?php
+require_once('config.php');
+?>
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>d.m login account | PHP</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+</style>
+<body>
+     
+
+<div>
+	<?php
+	
+	?>
+	<div class="d1">
+		<label id="logo">dadu MONEY envestiment</label><br>
+		<ul id="ul1">
+			<li><a href="DADU nEw.html" >home</a></li>
+			<li><a href="" id="center"></a></li>
+		</ul>
+		<ul id="ul2">
+			<li><a href="login.html">login</a></li>
+			<li><a href="registrastion.html">signup</a></li>
+		</ul>
+	</div>
+	<div>
+	<form action="LOGIN.php" method="post">
+		<div class="container">
+			
+			<div class="row">
+				<div class="MC">
+					<div class="col-sm-3">
+					<h1>Registration.</h1>
+					<h2>New User.</h2>
+					<p>Fill up the form with correct values.</p>
+					<hr class="mb-3">
+					<label for="firstname"><b>firstnamme</b></label>
+					<input class="form-control" id="firstname" type="text" name="firstname" required>
+
+					<label for="lastname"><b>Last Name</b></label>
+					<input class="form-control" id="lastname"  type="text" name="lastname" required>
+
+					<label for="phonenumber"><b>Phone Number</b></label>
+					<input class="form-control" id="phonenumber"  type="text" name="phonenumber" required>
+					<label>MtANDAO wa siMu</label>
+									<select>
+										<option>AIRTEL MONEy</option>
+										<option>VODACOM MPESA</option>
+										<option>YAS PESA</option>
+										<option>T PESA</option>
+										<option>HALO PESA</option>
+										<option></option>
+									</select><br>
+
+					<label for="password"><b>Password</b></label>
+					<input class="form-control" id="password"  type="password" name="password" required>
+					<hr class="mb-3">
+					<input class="btn btn-primary" type="submit" id="register" name="create" value="Sign Up">
+					</div>
+				</div>
+
+				<ul id="zi">
+			<br><li><a href=".html" id="center" >signout</a></li>
+			<li><a href="login.html" id="center">login</a></li>
+			<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		</ul>
+			</div>
+		</div>
+	</form>
+
+	<div class="footer">
+		<div class="ftr1">
+			<h3>about us.</h3>
+			<ul>
+				<li>wilsonjumbejunior@hotmail.com</li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="ftr2">
+			<h3>contact US.</h3>
+			<ul>
+				<li>+255791</li>
+				<li>Wilsonjumbejunior@hotmail.COM</li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="ftr3">
+			<h3>feed back.</h3>
+			<form>
+				<input type="email" name="email" placeholder="email"><br>
+				<input type="contact" name="contact" placeholder="255"><br>
+				<textarea name="text" placeholder="text"></textarea><br>
+				<button name="submite">submite</button>
+			</form>
+		</div>
+	</div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#register').click(function(e){
+
+			var valid = this.form.checkValidity();
+
+			if(valid){
+
+
+			var phonenumber = $('#phonenumber').val();
+			var password 	= $('#password').val();
+			
+
+				e.preventDefault();	
+
+				$.ajax({
+					type: 'POST',
+					url: 'process.php',
+					data: {phonenumber: phonenumber,password: password},
+					success: function(data){
+					Swal.fire({
+								'title': 'Successful',
+								'text': data,
+								'type': 'success'
+								})
+							
+					},
+					error: function(data){
+						Swal.fire({
+								'title': 'Errors',
+								'text': 'There were errors while saving the data.',
+								'type': 'error'
+								})
+					}
+				});
+
+				
+			}else{
+				
+			}
+
+			
+
+
+
+		});		
+
+		
+	});
+	
+</script>
+
+</body>
+</html>
